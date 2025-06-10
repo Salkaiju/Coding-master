@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+<title>Exercicios Javascript</title>
+<meta charset="utf-8">
+</head>
+<body>
+<h2>## 1 - O Despertador</h2>
+
+<input type="text" id="horarioAcordar" placeholder="Digite o horário de acordar" onchange="functionPegar()" style="background-color: lightyellow;">
+<input type="text" id="horarioSair" placeholder="Digite o horário de sair" onchange="functionPegar()" style="background-color: lightyellow;">
+<button onclick="functionVerif()">Verificar</button>
+    <p id="resultado">Resultado:</p>
+<h2>## 2 - Cadastro de Visitante</h2>
+
+    <input type="text" id="nomeVisitante" placeholder="Digite seu nome" onchange="functionPegar()" style="background-color: lightyellow;">
+    <input type="text" id="idadeVisitante" placeholder="Digite sua idade" onchange="functionPegar()" style="background-color: lightyellow;">
+    <input type="text" id="documentoVisitante" placeholder="Digite seu documento" onchange="functionPegar()" style="background-color: lightyellow;">
+    <button onclick="functionCadastroVisitante()">Cadastrar</button>
+    <p id="resultado2">Resultado:</p>
+
+<h2>## 3 - Acesso ao Sistema</h2>
+
+    <input type="text" id="senhaDigitada" placeholder="Digite a senha" onchange="functionPegar()" style="background-color: lightyellow;">
+    <button onclick="functionVerificarSenha()">Verificar</button>
+    <p id="resultado3">Resultado:</p>
+
+
+    <h2>## 4 - Calculadora de Descontos</h2>
+
+    <input type="text" id="precoOriginal" placeholder="Digite o preço" onchange="functionPegar()" style="background-color: lightyellow;">
+<input type="text" id="desconto" placeholder="Digite o desconto (%)" onchange="functionPegar()" style="background-color: lightyellow;">
+<button onclick="functionCalculadoraPromocao()">Verificar</button>
+    <p id="resultado4">Resultado:</p>
+
+
+<h2>## 5 - Criando um Livro</h2>
+
+        <input type="text" id="tituloLivro1" placeholder="Digite o título do livro 1" onchange="functionPegar()" style="background-color: lightyellow;">
+        <input type="text" id="autorLivro1" placeholder="Digite o autor do livro 1" onchange="functionPegar()" style="background-color: lightyellow;">
+        <input type="text" id="anoLivro1" placeholder="Digite o ano do livro 1" onchange="functionPegar()" style="background-color: lightyellow;">
+        <h2></h2>
+
+        <input type="text" id="tituloLivro2" placeholder="Digite o título do livro 2" onchange="functionPegar()" style="background-color: lightyellow;">
+        <input type="text" id="autorLivro2" placeholder="Digite o autor do livro 2" onchange="functionPegar()" style="background-color: lightyellow;">
+        <input type="text" id="anoLivro2" placeholder="Digite o ano do livro 2" onchange="functionPegar()" style="background-color: lightyellow;">
+<h2></h2>
+
+        <button onclick="functionCriarLivros()">Criar</button>
+    <p id="resultado5">Resultado:</p>
+
+
+<script src="scripts/main.js"></script>
+</body>
+</html>
