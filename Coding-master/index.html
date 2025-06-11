@@ -14,42 +14,109 @@
     <p id="resultado">Resultado:</p>
 <h2>## 2 - Cadastro de Visitante</h2>
 
-    <input type="text" id="nomeVisitante" placeholder="Digite seu nome" onchange="functionPegar()" style="background-color: lightyellow;">
-    <input type="text" id="idadeVisitante" placeholder="Digite sua idade" onchange="functionPegar()" style="background-color: lightyellow;">
-    <input type="text" id="documentoVisitante" placeholder="Digite seu documento" onchange="functionPegar()" style="background-color: lightyellow;">
+    <input type="text" id="nomeVisitante" placeholder="Digite seu nome" style="background-color: lightyellow;">
+    <input type="text" id="idadeVisitante" placeholder="Digite sua idade" style="background-color: lightyellow;">
+    <input type="text" id="documentoVisitante" placeholder="Digite seu documento"  style="background-color: lightyellow;">
     <button onclick="functionCadastroVisitante()">Cadastrar</button>
     <p id="resultado2">Resultado:</p>
 
 <h2>## 3 - Acesso ao Sistema</h2>
 
-    <input type="text" id="senhaDigitada" placeholder="Digite a senha" onchange="functionPegar()" style="background-color: lightyellow;">
+    <input type="text" id="senhaDigitada" placeholder="Digite a senha" style="background-color: lightyellow;">
     <button onclick="functionVerificarSenha()">Verificar</button>
     <p id="resultado3">Resultado:</p>
 
 
     <h2>## 4 - Calculadora de Descontos</h2>
 
-    <input type="text" id="precoOriginal" placeholder="Digite o preço" onchange="functionPegar()" style="background-color: lightyellow;">
-<input type="text" id="desconto" placeholder="Digite o desconto (%)" onchange="functionPegar()" style="background-color: lightyellow;">
+    <input type="text" id="precoOriginal" placeholder="Digite o preço"  style="background-color: lightyellow;">
+<input type="text" id="desconto" placeholder="Digite o desconto (%)" style="background-color: lightyellow;">
 <button onclick="functionCalculadoraPromocao()">Verificar</button>
     <p id="resultado4">Resultado:</p>
 
 
 <h2>## 5 - Criando um Livro</h2>
 
-        <input type="text" id="tituloLivro1" placeholder="Digite o título do livro 1" onchange="functionPegar()" style="background-color: lightyellow;">
-        <input type="text" id="autorLivro1" placeholder="Digite o autor do livro 1" onchange="functionPegar()" style="background-color: lightyellow;">
-        <input type="text" id="anoLivro1" placeholder="Digite o ano do livro 1" onchange="functionPegar()" style="background-color: lightyellow;">
+        <input type="text" id="tituloLivro1" placeholder="Digite o título do livro 1" style="background-color: lightyellow;">
+        <input type="text" id="autorLivro1" placeholder="Digite o autor do livro 1" style="background-color: lightyellow;">
+        <input type="text" id="anoLivro1" placeholder="Digite o ano do livro 1" style="background-color: lightyellow;">
         <h2></h2>
 
-        <input type="text" id="tituloLivro2" placeholder="Digite o título do livro 2" onchange="functionPegar()" style="background-color: lightyellow;">
-        <input type="text" id="autorLivro2" placeholder="Digite o autor do livro 2" onchange="functionPegar()" style="background-color: lightyellow;">
-        <input type="text" id="anoLivro2" placeholder="Digite o ano do livro 2" onchange="functionPegar()" style="background-color: lightyellow;">
+        <input type="text" id="tituloLivro2" placeholder="Digite o título do livro 2" style="background-color: lightyellow;">
+        <input type="text" id="autorLivro2" placeholder="Digite o autor do livro 2" style="background-color: lightyellow;">
+        <input type="text" id="anoLivro2" placeholder="Digite o ano do livro 2"  style="background-color: lightyellow;">
 <h2></h2>
 
         <button onclick="functionCriarLivros()">Criar</button>
     <p id="resultado5">Resultado:</p>
 
+
+
+<h2>Lista Compras</h2>
+<input type="text" id="item1" placeholder="Digite o item 1"  style="background-color: lightyellow;">
+<input type="text" id="item2" placeholder="Digite o item 2" style="background-color: lightyellow;">
+<input type="text" id="item3" placeholder="Digite o item 3" style="background-color: lightyellow;">
+<input type="text" id="item4" placeholder="Digite o item 4"  style="background-color: lightyellow;">
+<input type="text" id="item5" placeholder="Digite o item 5" style="background-color: lightyellow;">
+<button onclick="functionListaCompras()">Criar Lista</button>
+<p id="resultado6">Resultado:</p>
+
+<h2>Numeros de 1 a ? (for)</h2>
+<input type="text" id="numero" placeholder="Digite até que número digitar" style="background-color: lightyellow;">
+<button onclick="exibirNumeros()">Concluído</button>
+<p id="resultado7">Resultado:</p>
+
+<h2>Numeros de 1 a ? (while)</h2>
+<input type="text" id="numero2" placeholder="Digite até que número digitar" style="background-color: lightyellow;">
+<button onclick="exibirNumeros2()">Concluído</button>
+<p id="resultado8">Resultado:</p>
+
+<h2>Soma de números de 1 a ?</h2>
+<input type="text" id="nome1" placeholder="Digite um nome" style="background-color: lightyellow;">
+<input type="text" id="nome2" placeholder="Digite um nome" style="background-color: lightyellow;">
+<input type="text" id="nome3" placeholder="Digite um nome" style="background-color: lightyellow;">
+<button onclick="juntarNomes()">Concluído</button>
+<p id="resultado10">Resultado:</p>
+
+<h2>Números pares apenas</h2>
+
+<input type="text" id="nn1" placeholder="Digite um número" style="background-color: lightyellow;">
+<input type="text" id="nn2" placeholder="Digite um número" style="background-color: lightyellow;">
+<input type="text" id="nn3" placeholder="Digite um número" style="background-color: lightyellow;">
+<input type="text" id="nn4" placeholder="Digite um número" style="background-color: lightyellow;">
+<input type="text" id="nn5" placeholder="Digite um número" style="background-color: lightyellow;">
+<button onclick="exibirPares()">Concluído</button>
+<p id="resultado11">Resultado:</p>
+
+<h2>Calcular notas</h2>
+<input type="text" id="nota1" placeholder="Digite a nota 1" style="background-color: lightyellow;">
+<input type="text" id="nota2" placeholder="Digite a nota 2" style="background-color: lightyellow;">
+<input type="text" id="nota3" placeholder="Digite a nota 3" style="background-color: lightyellow;">
+<input type="text" id="nota4" placeholder="Digite a nota 4" style="background-color: lightyellow;">
+<button onclick="calcularMedia()">Concluído</button>
+<p id="resultado12">Resultado:</p>
+
+<h2>Exibir Cores Favoritas</h2>
+<input type="text" id="cor1" placeholder="cor1" style="background-color: lightyellow;">
+<input type="text" id="cor2" placeholder="cor2" style="background-color: lightyellow;">
+<input type="text" id="cor3" placeholder="cor3" style="background-color: lightyellow;">
+<button onclick="exibirCoresFavoritas()">Concluído</button>
+<p id="resultado13">Resultado:</p>
+
+<h2>Multiplica por 2</h2>
+<input type="text" id="m1" placeholder="Digite um número" style="background-color: lightyellow;">
+<input type="text" id="m2" placeholder="Digite um número" style="background-color: lightyellow;">
+<input type="text" id="m3" placeholder="Digite um número" style="background-color: lightyellow;">
+<input type="text" id="m4" placeholder="Digite um número" style="background-color: lightyellow;">
+<input type="text" id="m5" placeholder="Digite um número" style="background-color: lightyellow;">
+<button onclick="multiplicarPorDois()">Concluído</button>
+<p id="resultado14">Resultado:</p>
+
+
+<h2>Estoque</h2>
+
+<button onclick="verificarEstoque()">Concluído</button>
+<p id="resultado15">Resultado:</p>
 
 <script src="scripts/main.js"></script>
 </body>
