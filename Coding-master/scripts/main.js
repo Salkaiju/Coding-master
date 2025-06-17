@@ -276,12 +276,12 @@ Use um loop para calcular a média e exiba a mensagem:
         notas.push(parseFloat(document.getElementById('nota2').value));
         notas.push(parseFloat(document.getElementById('nota3').value));
         notas.push(parseFloat(document.getElementById('nota4').value));
-        
+
         let soma = 0;
         for (let i = 0; i < notas.length; i++) {
             soma += notas[i];
         }
-        
+
         let media = soma / notas.length;
         document.getElementById('resultado12').textContent = 'A média das notas é ' + media.toFixed(2);
     }
@@ -299,12 +299,12 @@ Use um `for...of` para exibir: `"Minha cor favorita número X é Y"`
         cores.push(document.getElementById('cor1').value);
         cores.push(document.getElementById('cor2').value);
         cores.push(document.getElementById('cor3').value);
-        
+
         let resultado = '';
         for (let i = 0; i < cores.length; i++) {
             resultado += `Minha cor favorita número ${i + 1} é ${cores[i]}<br>`;
         }
-        
+
         document.getElementById('resultado13').innerHTML = resultado;
     }
 }
@@ -326,7 +326,7 @@ Exiba o novo array no final.
         numeros.push(parseInt(document.getElementById('m5').value));
 
         let resultado = [];
-        numeros.forEach(function(numero) {
+        numeros.forEach(function (numero) {
             resultado.push(numero * 2);
         });
 
@@ -363,7 +363,7 @@ Para cada produto, exiba:
         ];
 
         let resultado = '';
-        produtos.forEach(function(produto) {
+        produtos.forEach(function (produto) {
             if (produto.quantidade < 3) {
                 resultado += `Produto ${produto.nome} está com estoque crítico: ${produto.quantidade} unidades.<br>`;
             }
@@ -378,9 +378,9 @@ Para cada produto, exiba:
         const img = document.createElement('img');
         img.src = 'https://img1.picmix.com/output/stamp/normal/6/5/7/2/2652756_b59fb.gif';
         img.alt = 'PP Favorita';
-        img.style.width = '200px'; 
-        img.style.height = 'auto'; 
-        document.getElementById('resultado16').innerHTML = ''; 
+        img.style.width = '200px';
+        img.style.height = 'auto';
+        document.getElementById('resultado16').innerHTML = '';
         document.getElementById('resultado16').appendChild(img);
     }
 }
@@ -392,21 +392,20 @@ Para cada produto, exiba:
 */
 {
     function mudarTexto() {
-        const paragrafo = document.getElementById('mensagem');
-        const mensagemInicial = 'Você é capaz de realizar grandes coisas!';
-        const mensagemDesmotivacional = 'Não.';
+        const resultado = document.getElementById('resultado16');
 
-        paragrafo.textContent = mensagemInicial;
+        resultado.textContent = "Você consegue!";
 
-        paragrafo.addEventListener('mousemove', function() {
-            paragrafo.textContent = mensagemDesmotivacional;
+        resultado.addEventListener('mousemove', function () {
+            resultado.textContent = 'Não';
         });
 
-        paragrafo.addEventListener('mouseout', function() {
-            paragrafo.textContent = mensagemInicial;
+        resultado.addEventListener('mouseout', function () {
+            resultado.textContent = "Você consegue!";
         });
     }
 }
+
 {
     function functionPegar() {
         acordar = document.getElementById('horarioAcordar').value;
@@ -685,12 +684,12 @@ Use um loop para calcular a média e exiba a mensagem:
         notas.push(parseFloat(document.getElementById('nota2').value));
         notas.push(parseFloat(document.getElementById('nota3').value));
         notas.push(parseFloat(document.getElementById('nota4').value));
-        
+
         let soma = 0;
         for (let i = 0; i < notas.length; i++) {
             soma += notas[i];
         }
-        
+
         let media = soma / notas.length;
         document.getElementById('resultado12').textContent = 'A média das notas é ' + media.toFixed(2);
     }
@@ -708,12 +707,12 @@ Use um `for...of` para exibir: `"Minha cor favorita número X é Y"`
         cores.push(document.getElementById('cor1').value);
         cores.push(document.getElementById('cor2').value);
         cores.push(document.getElementById('cor3').value);
-        
+
         let resultado = '';
         for (let i = 0; i < cores.length; i++) {
             resultado += `Minha cor favorita número ${i + 1} é ${cores[i]}<br>`;
         }
-        
+
         document.getElementById('resultado13').innerHTML = resultado;
     }
 }
@@ -735,7 +734,7 @@ Exiba o novo array no final.
         numeros.push(parseInt(document.getElementById('m5').value));
 
         let resultado = [];
-        numeros.forEach(function(numero) {
+        numeros.forEach(function (numero) {
             resultado.push(numero * 2);
         });
 
@@ -772,7 +771,7 @@ Para cada produto, exiba:
         ];
 
         let resultado = '';
-        produtos.forEach(function(produto) {
+        produtos.forEach(function (produto) {
             if (produto.quantidade < 3) {
                 resultado += `Produto ${produto.nome} está com estoque crítico: ${produto.quantidade} unidades.<br>`;
             }
@@ -780,4 +779,10 @@ Para cada produto, exiba:
 
         document.getElementById('resultado15').innerHTML = resultado;
     }
+}
+
+
+
+{
+    
 }
