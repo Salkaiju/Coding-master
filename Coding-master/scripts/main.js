@@ -372,7 +372,41 @@ Para cada produto, exiba:
         document.getElementById('resultado15').innerHTML = resultado;
     }
 }
+// Exibir uma imagem de pp favorito quando o botão for clicado: https://img1.picmix.com/output/stamp/normal/6/5/7/2/2652756_b59fb.gif
+{
+    function exibirImagem() {
+        const img = document.createElement('img');
+        img.src = 'https://img1.picmix.com/output/stamp/normal/6/5/7/2/2652756_b59fb.gif';
+        img.alt = 'PP Favorita';
+        img.style.width = '200px'; 
+        img.style.height = 'auto'; 
+        document.getElementById('resultado16').innerHTML = ''; 
+        document.getElementById('resultado16').appendChild(img);
+    }
+}
+/*
+## 2 - Mudando o texto
+- Crie uma página html com um parágrafo de uma mensagem motivacional.
+- Adicione `addEventListener()` para `mousemove` para alterar para uma mensagem desmotivacional.
+- Adicione `addEventListener()` para `mouseout` para alterar para a mensagem inicial.
+*/
+{
+    function mudarTexto() {
+        const paragrafo = document.getElementById('mensagem');
+        const mensagemInicial = 'Você é capaz de realizar grandes coisas!';
+        const mensagemDesmotivacional = 'Não.';
 
+        paragrafo.textContent = mensagemInicial;
+
+        paragrafo.addEventListener('mousemove', function() {
+            paragrafo.textContent = mensagemDesmotivacional;
+        });
+
+        paragrafo.addEventListener('mouseout', function() {
+            paragrafo.textContent = mensagemInicial;
+        });
+    }
+}
 {
     function functionPegar() {
         acordar = document.getElementById('horarioAcordar').value;
@@ -745,40 +779,5 @@ Para cada produto, exiba:
         });
 
         document.getElementById('resultado15').innerHTML = resultado;
-    }
-}
-// Exibir uma imagem de pp favorito quando o botão for clicado: https://img1.picmix.com/output/stamp/normal/6/5/7/2/2652756_b59fb.gif
-{
-    function exibirImagem() {
-        const img = document.createElement('img');
-        img.src = 'https://img1.picmix.com/output/stamp/normal/6/5/7/2/2652756_b59fb.gif';
-        img.alt = 'PP Favorita';
-        img.style.width = '200px'; 
-        img.style.height = 'auto'; 
-        document.getElementById('resultado16').innerHTML = ''; 
-        document.getElementById('resultado16').appendChild(img);
-    }
-}
-/*
-## 2 - Mudando o texto
-- Crie uma página html com um parágrafo de uma mensagem motivacional.
-- Adicione `addEventListener()` para `mousemove` para alterar para uma mensagem desmotivacional.
-- Adicione `addEventListener()` para `mouseout` para alterar para a mensagem inicial.
-*/
-{
-    function mudarTexto() {
-        const paragrafo = document.getElementById('mensagem');
-        const mensagemInicial = 'Você é capaz de realizar grandes coisas!';
-        const mensagemDesmotivacional = 'Não.';
-
-        paragrafo.textContent = mensagemInicial;
-
-        paragrafo.addEventListener('mousemove', function() {
-            paragrafo.textContent = mensagemDesmotivacional;
-        });
-
-        paragrafo.addEventListener('mouseout', function() {
-            paragrafo.textContent = mensagemInicial;
-        });
     }
 }
