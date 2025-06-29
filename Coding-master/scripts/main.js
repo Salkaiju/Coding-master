@@ -784,5 +784,28 @@ Para cada produto, exiba:
 
 
 {
-    
+    function Trocar(){
+        const div = document.getElementById('div1');
+        div.style.backgroundColor = 'lightblue';
+    }
 }
+
+{
+    function AlertarText(){
+        const texto = document.getElementById('texto34').value;
+        if (texto === '') {
+            alert('Por favor, preencha o campo de texto.');
+        } else {
+            alert('Você digitou: ' + texto);
+        }
+    }
+}
+
+{
+    let contador = 0;
+function Clicks() {
+    contador++;
+    document.getElementById('resultadoClicks').textContent = 'Número de clicks: ' + contador;
+}
+}
+
